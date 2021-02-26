@@ -12,5 +12,10 @@
 - Cards (custom flutter widgets) initialized.
 - COVID factors decided.
 
+### DAY 3
+
+- Color scheme added with more customized widgets.
+- Fontawesome package added.
+- UI design of multipage setup in development.
 
 
