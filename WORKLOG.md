@@ -23,3 +23,8 @@
 - Added height factor.
 - Made separate dart file for constants.
 - Initiated other factors.
+
+### DAY 5
+
+- Refactored code.
+- Added slider for height with custom changes.
