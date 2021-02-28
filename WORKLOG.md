@@ -18,4 +18,8 @@
 - Fontawesome package added.
 - UI design of multipage setup in development.
 
+### DAY 4 
 
+- Added height factor.
+- Made separate dart file for constants.
+- Initiated other factors.
