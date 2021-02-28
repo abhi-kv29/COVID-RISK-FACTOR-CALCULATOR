@@ -14,7 +14,6 @@ class IconContent extends StatelessWidget {
       children: <Widget>[
         Icon(
           icon,
-          color: Colors.white,
           size: 80.0,
         ),
         SizedBox(
