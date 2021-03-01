@@ -28,3 +28,10 @@
 
 - Refactored code.
 - Added slider for height with custom changes.
+
+### DAY 6
+
+- First input page design completed.
+- All covid exposure factors are now set for the 2nd input page.
+- Started routing and navigation for different pages.
+
