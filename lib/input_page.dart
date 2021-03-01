@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'icon_content.dart';
@@ -146,7 +147,9 @@ class _InputPageState extends State<InputPage> {
                                 icon: FontAwesomeIcons.minus,
                                 onPressed: () {
                                   setState(() {
-                                    weight--;
+                                    if (weight > 2) {
+                                      weight--;
+                                    }
                                   });
                                 },
                               ),
@@ -157,7 +160,9 @@ class _InputPageState extends State<InputPage> {
                                 icon: FontAwesomeIcons.plus,
                                 onPressed: () {
                                   setState(() {
-                                    weight++;
+                                    if (weight < 180) {
+                                      weight++;
+                                    }
                                   });
                                 },
                               ),
@@ -188,7 +193,9 @@ class _InputPageState extends State<InputPage> {
                                 icon: FontAwesomeIcons.minus,
                                 onPressed: () {
                                   setState(() {
-                                    age--;
+                                    if (age > 1) {
+                                      age--;
+                                    }
                                   });
                                 },
                               ),
@@ -199,7 +206,9 @@ class _InputPageState extends State<InputPage> {
                                 icon: FontAwesomeIcons.plus,
                                 onPressed: () {
                                   setState(() {
-                                    age++;
+                                    if (age < 100) {
+                                      age++;
+                                    }
                                   });
                                 },
                               ),
