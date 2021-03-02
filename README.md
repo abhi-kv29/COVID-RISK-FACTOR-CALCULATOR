@@ -6,6 +6,6 @@
 
 ### DESCRIPTION
 
-This is an app created with flutter(dart) on Android Studio. It works on a normal algorithm to calculate your risk factor of exposure to covid 19 in a categorical manner.
+This is an app created with flutter(dart) on Android Studio. It works on a normal algorithm to calculate your risk factor of exposure to Covid-19 in a categorical manner.
 
 
