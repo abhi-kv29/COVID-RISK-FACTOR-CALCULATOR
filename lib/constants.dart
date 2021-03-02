@@ -19,3 +19,8 @@ const kNextButtonTextStyle = TextStyle(
   fontWeight: FontWeight.bold,
   fontSize: 25.0,
 );
+
+const kBoolTextStyle = TextStyle(
+  fontWeight: FontWeight.w400,
+  fontSize: 20.0,
+);
