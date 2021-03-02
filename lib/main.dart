@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'input_page.dart';
+import 'home_screen.dart';
 
 void main() => runApp(COVIDRFCalculator());
 
@@ -12,7 +12,7 @@ class COVIDRFCalculator extends StatelessWidget {
         primaryColor: Color(0xFF0A0E21),
         scaffoldBackgroundColor: Color(0xFF0A0E21),
       ),
-      home: InputPage(),
+      home: HomePage(),
     );
   }
 }
