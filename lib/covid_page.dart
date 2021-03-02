@@ -98,12 +98,12 @@ class _CovidPageState extends State<CovidPage> {
                           'DRY COUGH',
                           style: kLabelTextStyle,
                         ),
-                        Text(
-                          dryCough.toString(),
-                          style: kBoolTextStyle,
-                        ),
                         SizedBox(
-                          height: 45.0,
+                          height: 25.0,
+                        ),
+                        Text(
+                          dryCough.toString().toUpperCase(),
+                          style: kBoolTextStyle,
                         ),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.center,
@@ -142,12 +142,12 @@ class _CovidPageState extends State<CovidPage> {
                           'TASTE & SMELL',
                           style: kLabelTextStyle,
                         ),
-                        Text(
-                          tasteSmell.toString(),
-                          style: kBoolTextStyle,
-                        ),
                         SizedBox(
-                          height: 45.0,
+                          height: 25.0,
+                        ),
+                        Text(
+                          tasteSmell.toString().toUpperCase(),
+                          style: kBoolTextStyle,
                         ),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.center,
@@ -192,12 +192,12 @@ class _CovidPageState extends State<CovidPage> {
                           'FATIGUE',
                           style: kLabelTextStyle,
                         ),
-                        Text(
-                          fatigue.toString(),
-                          style: kBoolTextStyle,
-                        ),
                         SizedBox(
-                          height: 45.0,
+                          height: 25.0,
+                        ),
+                        Text(
+                          fatigue.toString().toUpperCase(),
+                          style: kBoolTextStyle,
                         ),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.center,
@@ -236,12 +236,12 @@ class _CovidPageState extends State<CovidPage> {
                           'NAUSEA & VOMITING',
                           style: kLabelTextStyle,
                         ),
-                        Text(
-                          nauseaVomiting.toString(),
-                          style: kBoolTextStyle,
-                        ),
                         SizedBox(
-                          height: 45.0,
+                          height: 25.0,
+                        ),
+                        Text(
+                          nauseaVomiting.toString().toUpperCase(),
+                          style: kBoolTextStyle,
                         ),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.center,
