@@ -229,16 +229,15 @@ class _InputPageState extends State<InputPage> {
                     MaterialPageRoute(builder: (context) => CovidPage()));
               },
               child: Container(
-                alignment: Alignment.center,
-                child: Text(
-                  'NEXT',
-                  style: TextStyle(
-                    fontSize: 30.0,
-                    fontWeight: FontWeight.bold,
+                child: Center(
+                  child: Text(
+                    'NEXT',
+                    style: kNextButtonTextStyle,
                   ),
                 ),
                 color: kBottomContainerColour,
                 margin: EdgeInsets.only(top: 10.0),
+                //padding: EdgeInsets.only(bottom: 20.0), (only add if necessary on an actual device.
                 width: double.infinity,
                 height: kBottomContainerHeight,
               ),
