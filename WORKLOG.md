@@ -34,4 +34,5 @@
 - First input page design completed.
 - All covid exposure factors are now set for the 2nd input page.
 - Started routing and navigation for different pages.
+- Added maximum and minimum values for weight and age so that code won't break during testing and no extra cases for invalid inputs to be made.
 
