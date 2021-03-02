@@ -36,3 +36,9 @@
 - Started routing and navigation for different pages.
 - Added maximum and minimum values for weight and age so that code won't break during testing and no extra cases for invalid inputs to be made.
 
+### DAY 7
+
+- Added Home page to the app.
+- Started working on covid factors input page.
+- Implemented routing and navigation.
+
