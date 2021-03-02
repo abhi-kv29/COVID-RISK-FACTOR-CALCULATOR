@@ -38,7 +38,6 @@
 
 ### DAY 7
 
-- Added Home page to the app.
+- Added Home page and updated app icons.
 - Started working on covid factors input page.
 - Implemented routing and navigation.
-
