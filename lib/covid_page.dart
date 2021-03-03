@@ -5,6 +5,8 @@ import 'reusable_card.dart';
 import 'constants.dart';
 import 'dart:math';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'botton_button.dart';
+import 'round_icon_button.dart';
 
 double roundDouble(double value, int places) {
   double mod = pow(10.0, places);
@@ -274,49 +276,15 @@ class _CovidPageState extends State<CovidPage> {
               ],
             ),
           ),
-          GestureDetector(
+          BottomButton(
             onTap: () {
               Navigator.push(context,
                   MaterialPageRoute(builder: (context) => ResultsPage()));
             },
-            child: Container(
-              child: Center(
-                child: Text(
-                  'CALCULATE',
-                  style: kNextButtonTextStyle,
-                ),
-              ),
-              color: kBottomContainerColour,
-              margin: EdgeInsets.only(top: 10.0),
-              //padding: EdgeInsets.only(bottom: 20.0), (only add if necessary on an actual device.
-              width: double.infinity,
-              height: kBottomContainerHeight,
-            ),
+            buttonTitle: 'CALCULATE',
           ),
         ],
       ),
-    );
-  }
-}
-
-class RoundIconButton extends StatelessWidget {
-  RoundIconButton({@required this.icon, this.onPressed});
-
-  final IconData icon;
-  final Function onPressed;
-
-  @override
-  Widget build(BuildContext context) {
-    return RawMaterialButton(
-      child: Icon(icon),
-      onPressed: onPressed,
-      elevation: 6.0,
-      constraints: BoxConstraints.tightFor(
-        width: 55.0,
-        height: 55.0,
-      ),
-      shape: CircleBorder(),
-      fillColor: Color(0xFF4C4F5E),
     );
   }
 }

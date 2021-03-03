@@ -33,7 +33,7 @@ class ResultsPage extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: <Widget>[
                   Text(
-                    'Low',
+                    'LOW',
                     style: kResultTextStyle,
                   ),
                   Text(

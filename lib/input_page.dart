@@ -6,6 +6,8 @@ import 'icon_content.dart';
 import 'reusable_card.dart';
 import 'constants.dart';
 import 'covid_page.dart';
+import 'botton_button.dart';
+import 'round_icon_button.dart';
 
 enum Gender {
   male,
@@ -223,48 +225,17 @@ class _InputPageState extends State<InputPage> {
                 ],
               ),
             ),
-            GestureDetector(
-              onTap: () {
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => CovidPage()));
-              },
-              child: Container(
-                child: Center(
-                  child: Text(
-                    'NEXT',
-                    style: kNextButtonTextStyle,
-                  ),
-                ),
-                color: kBottomContainerColour,
-                margin: EdgeInsets.only(top: 10.0),
-                //padding: EdgeInsets.only(bottom: 20.0), (only add if necessary on an actual device.
-                width: double.infinity,
-                height: kBottomContainerHeight,
-              ),
-            ),
+            BottomButton(
+                buttonTitle: 'NEXT',
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => CovidPage(),
+                    ),
+                  );
+                }),
           ],
         ));
-  }
-}
-
-class RoundIconButton extends StatelessWidget {
-  RoundIconButton({@required this.icon, this.onPressed});
-
-  final IconData icon;
-  final Function onPressed;
-
-  @override
-  Widget build(BuildContext context) {
-    return RawMaterialButton(
-      child: Icon(icon),
-      onPressed: onPressed,
-      elevation: 6.0,
-      constraints: BoxConstraints.tightFor(
-        width: 50.0,
-        height: 50.0,
-      ),
-      shape: CircleBorder(),
-      fillColor: Color(0xFF4C4F5E),
-    );
   }
 }
