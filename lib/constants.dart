@@ -24,3 +24,23 @@ const kBoolTextStyle = TextStyle(
   fontWeight: FontWeight.bold,
   fontSize: 30.0,
 );
+
+const kTitleTextStyle = TextStyle(
+  fontSize: 50.0,
+  fontWeight: FontWeight.bold,
+);
+
+const kResultTextStyle = TextStyle(
+  color: Color(0xFF24D876),
+  fontSize: 25.0,
+  fontWeight: FontWeight.bold,
+);
+
+const kCovidTextStyle = TextStyle(
+  fontWeight: FontWeight.normal,
+  fontSize: 100.0,
+);
+
+const kMessageTextStyle = TextStyle(
+  fontSize: 22.0,
+);
