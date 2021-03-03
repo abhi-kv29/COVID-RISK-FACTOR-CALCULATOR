@@ -48,3 +48,9 @@
 - Added results page and set the basic layout.
 - Improved view capabilties of covid input page.
 
+### DAY 9 
+
+- Hardcoded result page for now.
+- Replaced some normal factors with covid factors.
+
+
