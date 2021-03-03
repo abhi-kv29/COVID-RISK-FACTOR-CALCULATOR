@@ -52,5 +52,6 @@
 
 - Hardcoded result page for now.
 - Replaced some normal factors with covid factors.
-
+- Refactored the code to reduce complexity.
+- Simplifed the followed boolean approach. 
 
