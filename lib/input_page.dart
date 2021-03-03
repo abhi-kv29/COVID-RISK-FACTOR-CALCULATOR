@@ -9,11 +9,6 @@ import 'covid_page.dart';
 import 'botton_button.dart';
 import 'round_icon_button.dart';
 
-enum Gender {
-  male,
-  female,
-}
-
 class InputPage extends StatefulWidget {
   @override
   _InputPageState createState() => _InputPageState();
@@ -23,10 +18,11 @@ class _InputPageState extends State<InputPage> {
   Color maleCardColour = kInactiveCardColour;
   Color femaleCardColour = kInactiveCardColour;
 
-  Gender selectedGender;
   int height = 170;
   int weight = 60;
   int age = 18;
+  bool soreThroat = false;
+  bool diarrhea = false;
 
   @override
   Widget build(BuildContext context) {
@@ -38,44 +34,6 @@ class _InputPageState extends State<InputPage> {
         body: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
-            Expanded(
-              child: Row(
-                children: <Widget>[
-                  Expanded(
-                    child: ReusableCard(
-                      onPress: () {
-                        setState(() {
-                          selectedGender = Gender.male;
-                        });
-                      },
-                      colour: selectedGender == Gender.male
-                          ? kActiveCardColour
-                          : kInactiveCardColour,
-                      cardChild: IconContent(
-                        icon: FontAwesomeIcons.mars,
-                        label: 'MALE',
-                      ),
-                    ),
-                  ),
-                  Expanded(
-                    child: ReusableCard(
-                      onPress: () {
-                        setState(() {
-                          selectedGender = Gender.female;
-                        });
-                      },
-                      colour: selectedGender == Gender.female
-                          ? kActiveCardColour
-                          : kInactiveCardColour,
-                      cardChild: IconContent(
-                        icon: FontAwesomeIcons.venus,
-                        label: 'FEMALE',
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-            ),
             Expanded(
               child: ReusableCard(
                 colour: kActiveCardColour,
@@ -213,6 +171,100 @@ class _InputPageState extends State<InputPage> {
                                     if (age < 100) {
                                       age++;
                                     }
+                                  });
+                                },
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            Expanded(
+              child: Row(
+                children: <Widget>[
+                  Expanded(
+                    child: ReusableCard(
+                      colour: kActiveCardColour,
+                      cardChild: Column(
+                        children: <Widget>[
+                          Text(
+                            'SORE THROAT',
+                            style: kLabelTextStyle,
+                          ),
+                          SizedBox(
+                            height: 25.0,
+                          ),
+                          Text(
+                            soreThroat.toString().toUpperCase(),
+                            style: kBoolTextStyle,
+                          ),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: <Widget>[
+                              RoundIconButton(
+                                icon: FontAwesomeIcons.solidArrowAltCircleDown,
+                                onPressed: () {
+                                  setState(() {
+                                    soreThroat = false;
+                                  });
+                                },
+                              ),
+                              SizedBox(
+                                width: 10,
+                              ),
+                              RoundIconButton(
+                                icon: FontAwesomeIcons.solidArrowAltCircleUp,
+                                onPressed: () {
+                                  setState(() {
+                                    soreThroat = true;
+                                  });
+                                },
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                  Expanded(
+                    child: ReusableCard(
+                      colour: kActiveCardColour,
+                      cardChild: Column(
+                        children: <Widget>[
+                          Text(
+                            'DIARRHEA',
+                            style: kLabelTextStyle,
+                          ),
+                          SizedBox(
+                            height: 25.0,
+                          ),
+                          Text(
+                            diarrhea.toString().toUpperCase(),
+                            style: kBoolTextStyle,
+                          ),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: <Widget>[
+                              RoundIconButton(
+                                icon: FontAwesomeIcons.solidArrowAltCircleDown,
+                                onPressed: () {
+                                  setState(() {
+                                    diarrhea = false;
+                                  });
+                                },
+                              ),
+                              SizedBox(
+                                width: 10,
+                              ),
+                              RoundIconButton(
+                                icon: FontAwesomeIcons.solidArrowAltCircleUp,
+                                onPressed: () {
+                                  setState(() {
+                                    diarrhea = true;
                                   });
                                 },
                               ),
