@@ -41,3 +41,10 @@
 - Added Home page and updated app icons.
 - Started working on covid factors input page.
 - Implemented routing and navigation.
+
+### DAY 8
+
+- Completed covid input page and set routes and navigations further.
+- Added results page and set the basic layout.
+- Improved view capabilties of covid input page.
+
