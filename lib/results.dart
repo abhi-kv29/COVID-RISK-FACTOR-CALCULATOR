@@ -11,7 +11,7 @@ class ResultsPage extends StatelessWidget {
   ResultsPage(
       {this.testResult, this.resultMessage, this.resultText, this.bmiResult});
 
-  final String bmiResult;
+  final double bmiResult;
   final String testResult;
   final String resultText;
   final String resultMessage;
