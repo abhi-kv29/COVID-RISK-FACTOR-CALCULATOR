@@ -61,3 +61,7 @@
 - Resolved bugged results.
 - Starting working on issue related to navigation parameters.
 - Second input page issue resolved. 
+
+### DAY 11
+
+- Started working on First input page issue.
