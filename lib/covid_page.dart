@@ -7,6 +7,7 @@ import 'dart:math';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'botton_button.dart';
 import 'round_icon_button.dart';
+import 'brain.dart';
 
 double roundDouble(double value, int places) {
   double mod = pow(10.0, places);
@@ -278,8 +279,20 @@ class _CovidPageState extends State<CovidPage> {
           ),
           BottomButton(
             onTap: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => ResultsPage()));
+              Brain calc = Brain(
+                  temp: temp,
+                  dryCough: dryCough,
+                  tasteSmell: tasteSmell,
+                  nauseaVomiting: nauseaVomiting,
+                  fatigue: fatigue);
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => ResultsPage(
+                            testResult: calc.calculateRisk(),
+                            resultMessage: calc.getMessage(),
+                            resultText: calc.getResult(),
+                          )));
             },
             buttonTitle: 'CALCULATE',
           ),

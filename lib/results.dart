@@ -4,8 +4,16 @@ import 'package:covid_risk_factor_calculator/input_page.dart';
 import 'package:covid_risk_factor_calculator/reusable_card.dart';
 import 'package:flutter/material.dart';
 import 'botton_button.dart';
+import 'covid_page.dart';
+import 'brain.dart';
 
 class ResultsPage extends StatelessWidget {
+  ResultsPage({this.testResult, this.resultMessage, this.resultText});
+
+  final String testResult;
+  final String resultText;
+  final String resultMessage;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -37,15 +45,15 @@ class ResultsPage extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: <Widget>[
                   Text(
-                    'LOW',
+                    resultText,
                     style: kResultTextStyle,
                   ),
                   Text(
-                    '15.4',
+                    testResult,
                     style: kCovidTextStyle,
                   ),
                   Text(
-                    'Your COVID-19 Risk Factor is Low you can head out to your work.',
+                    resultMessage,
                     style: kMessageTextStyle,
                     textAlign: TextAlign.center,
                   ),

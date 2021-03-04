@@ -8,6 +8,8 @@ import 'constants.dart';
 import 'covid_page.dart';
 import 'botton_button.dart';
 import 'round_icon_button.dart';
+import 'brain.dart';
+import 'results.dart';
 
 class InputPage extends StatefulWidget {
   @override
@@ -280,6 +282,12 @@ class _InputPageState extends State<InputPage> {
             BottomButton(
                 buttonTitle: 'NEXT',
                 onTap: () {
+                  Brain calc = Brain(
+                      height: height,
+                      age: age,
+                      weight: weight,
+                      soreThroat: soreThroat,
+                      diarrhea: diarrhea);
                   Navigator.push(
                     context,
                     MaterialPageRoute(
