@@ -20,11 +20,11 @@ class _InputPageState extends State<InputPage> {
   Color maleCardColour = kInactiveCardColour;
   Color femaleCardColour = kInactiveCardColour;
 
-  int height = 170;
-  int weight = 60;
-  int age = 18;
-  bool soreThroat = false;
-  bool diarrhea = false;
+  // int height = 170;
+  // int weight = 60;
+  // int age = 18;
+  // bool soreThroat = false;
+  // bool diarrhea = false;
 
   @override
   Widget build(BuildContext context) {
@@ -282,18 +282,8 @@ class _InputPageState extends State<InputPage> {
             BottomButton(
                 buttonTitle: 'NEXT',
                 onTap: () {
-                  Brain calc = Brain(
-                      height: height,
-                      age: age,
-                      weight: weight,
-                      soreThroat: soreThroat,
-                      diarrhea: diarrhea);
-                  Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) => CovidPage(
-                                bmiResult: calc.calculateBMI(),
-                              )));
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => CovidPage()));
                 }),
           ],
         ));

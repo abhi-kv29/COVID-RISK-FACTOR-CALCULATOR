@@ -44,3 +44,14 @@ const kCovidTextStyle = TextStyle(
 const kMessageTextStyle = TextStyle(
   fontSize: 22.0,
 );
+
+int height = 170;
+int weight = 60;
+int age = 18;
+bool soreThroat = false;
+bool diarrhea = false;
+double temp = 98.6;
+bool dryCough = false;
+bool tasteSmell = false;
+bool fatigue = false;
+bool nauseaVomiting = false;

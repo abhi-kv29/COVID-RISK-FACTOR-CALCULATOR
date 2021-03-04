@@ -15,20 +15,16 @@ double roundDouble(double value, int places) {
 }
 
 class CovidPage extends StatefulWidget {
-  CovidPage({this.bmiResult});
-
-  final double bmiResult;
-
   @override
   _CovidPageState createState() => _CovidPageState();
 }
 
 class _CovidPageState extends State<CovidPage> {
-  double temp = 98.6;
-  bool dryCough = false;
-  bool tasteSmell = false;
-  bool fatigue = false;
-  bool nauseaVomiting = false;
+  // double temp = 98.6;
+  // bool dryCough = false;
+  // bool tasteSmell = false;
+  // bool fatigue = false;
+  // bool nauseaVomiting = false;
 
   @override
   Widget build(BuildContext context) {
@@ -284,7 +280,12 @@ class _CovidPageState extends State<CovidPage> {
           BottomButton(
             onTap: () {
               Brain calc = Brain(
+                  age: age,
+                  weight: weight,
+                  soreThroat: soreThroat,
+                  height: height,
                   temp: temp,
+                  diarrhea: diarrhea,
                   dryCough: dryCough,
                   tasteSmell: tasteSmell,
                   nauseaVomiting: nauseaVomiting,
