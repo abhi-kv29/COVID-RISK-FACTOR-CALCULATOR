@@ -1,3 +1,5 @@
+import 'dart:math';
+
 class Brain {
   Brain(
       {this.height,
@@ -25,21 +27,24 @@ class Brain {
   double _riskRate;
   int count = 0;
 
-  String calculateRisk() {
-    // _bmi = weight / height * height;
-    //  _bmi.toStringAsFixed(1);
-    //  if (_bmi > 30.0) {
-    //    count++;
-    //  }if (_bmi > 30.0) {
-    //    count--;}
-    //if (age > 60) {
-    //count = count + 2;}
+  String calculateBMI() {
+    _bmi = weight / pow(height / 100, 2);
+    if (_bmi > 30.0) {
+      count++;
+    }
+    if (age >= 60) {
+      count = count + 2;
+    }
     if (soreThroat == true) {
       count = count + 1;
     }
     if (diarrhea == true) {
       count++;
     }
+    return _bmi.toStringAsFixed(1);
+  }
+
+  String calculateRisk() {
     if (temp > 100.4) {
       count = count + 2;
     }
@@ -55,7 +60,7 @@ class Brain {
     if (nauseaVomiting == true) {
       count++;
     }
-    _riskRate = (count / 8) * 100;
+    _riskRate = (count / 13) * 100;
     return _riskRate.toStringAsFixed(1);
   }
 

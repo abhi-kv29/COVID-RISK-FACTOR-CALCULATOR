@@ -15,6 +15,10 @@ double roundDouble(double value, int places) {
 }
 
 class CovidPage extends StatefulWidget {
+  CovidPage({this.bmiResult});
+
+  final String bmiResult;
+
   @override
   _CovidPageState createState() => _CovidPageState();
 }

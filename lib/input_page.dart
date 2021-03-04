@@ -289,11 +289,11 @@ class _InputPageState extends State<InputPage> {
                       soreThroat: soreThroat,
                       diarrhea: diarrhea);
                   Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => CovidPage(),
-                    ),
-                  );
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => CovidPage(
+                                bmiResult: calc.calculateBMI(),
+                              )));
                 }),
           ],
         ));
