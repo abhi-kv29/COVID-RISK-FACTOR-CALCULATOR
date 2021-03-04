@@ -55,3 +55,8 @@
 - Refactored the code to reduce complexity.
 - Simplifed the followed boolean approach. 
 
+### DAY 10
+
+- Implemented algorithm for calculation.
+- Resolved bugged results.
+- Starting working on issue related to navigation parameters.
