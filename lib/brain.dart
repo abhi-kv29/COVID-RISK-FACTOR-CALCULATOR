@@ -27,7 +27,7 @@ class Brain {
   double _riskRate;
   int count = 0;
 
-  String calculateBMI() {
+  double calculateBMI() {
     _bmi = weight / pow(height / 100, 2);
     if (_bmi > 30.0) {
       count++;
@@ -41,7 +41,7 @@ class Brain {
     if (diarrhea == true) {
       count++;
     }
-    return _bmi.toStringAsFixed(1);
+    return _bmi;
   }
 
   String calculateRisk() {
