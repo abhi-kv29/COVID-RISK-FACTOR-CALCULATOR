@@ -66,4 +66,7 @@
 
 - Started working on First input page issue.
 - First input page issue resolved.
-- Added finishing touches  
+- Added finishing touches and refactored code.
+- made seperate files for variables and constants.
+  
+- 
