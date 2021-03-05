@@ -36,7 +36,7 @@ class Brain {
       count = count + 2;
     }
     if (soreThroat == true) {
-      count = count + 1;
+      count = count + 2;
     }
     if (diarrhea == true) {
       count++;
@@ -45,10 +45,10 @@ class Brain {
       count = count + 2;
     }
     if (dryCough == true) {
-      count = count + 2;
+      count = count + 3;
     }
     if (tasteSmell == true) {
-      count = count + 2;
+      count = count + 3;
     }
     if (fatigue == true) {
       count++;
@@ -56,16 +56,16 @@ class Brain {
     if (nauseaVomiting == true) {
       count++;
     }
-    _riskRate = (count / 13) * 100;
+    _riskRate = (count / 14) * 100;
     return _riskRate.toStringAsFixed(1);
   }
 
   String getResult() {
-    if (_riskRate > 10.0 && _riskRate < 40.0) {
+    if (_riskRate >= 0.0 && _riskRate <= 30.0) {
       return 'LOW';
-    } else if (_riskRate > 40.0 && _riskRate < 70.0) {
+    } else if (_riskRate > 30.0 && _riskRate <= 60.0) {
       return 'MODERATE';
-    } else if (_riskRate > 70.0) {
+    } else if (_riskRate > 60.0) {
       return 'HIGH';
     } else {
       return 'INVALID VALUES';
@@ -73,11 +73,11 @@ class Brain {
   }
 
   String getMessage() {
-    if (_riskRate > 10.0 && _riskRate < 40.0) {
+    if (_riskRate >= 0.0 && _riskRate <= 30.0) {
       return 'Your Covid-19 Risk Rate is Low, you can head out to work.';
-    } else if (_riskRate > 40.0 && _riskRate < 70.0) {
+    } else if (_riskRate > 30.0 && _riskRate <= 60.0) {
       return 'Your Covid-19 Risk Rate is Medium, if possible avoid going out.';
-    } else if (_riskRate > 70) {
+    } else if (_riskRate > 60.0) {
       return 'Your Covid-19 Risk Rate is High, it is recommended to take a physical Covid Test';
     } else {
       return 'The values that you have entered are invalid, try again';

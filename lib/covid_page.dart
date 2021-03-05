@@ -2,7 +2,7 @@ import 'package:covid_risk_factor_calculator/results.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'reusable_card.dart';
-import 'constants.dart';
+import 'const_and_var.dart';
 import 'dart:math';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'botton_button.dart';
@@ -20,12 +20,6 @@ class CovidPage extends StatefulWidget {
 }
 
 class _CovidPageState extends State<CovidPage> {
-  // double temp = 98.6;
-  // bool dryCough = false;
-  // bool tasteSmell = false;
-  // bool fatigue = false;
-  // bool nauseaVomiting = false;
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -102,7 +96,7 @@ class _CovidPageState extends State<CovidPage> {
                           style: kLabelTextStyle,
                         ),
                         SizedBox(
-                          height: 25.0,
+                          height: 30.0,
                         ),
                         Text(
                           dryCough.toString().toUpperCase(),
@@ -146,7 +140,7 @@ class _CovidPageState extends State<CovidPage> {
                           style: kLabelTextStyle,
                         ),
                         SizedBox(
-                          height: 25.0,
+                          height: 30.0,
                         ),
                         Text(
                           tasteSmell.toString().toUpperCase(),
@@ -196,7 +190,7 @@ class _CovidPageState extends State<CovidPage> {
                           style: kLabelTextStyle,
                         ),
                         SizedBox(
-                          height: 25.0,
+                          height: 30.0,
                         ),
                         Text(
                           fatigue.toString().toUpperCase(),
@@ -240,7 +234,7 @@ class _CovidPageState extends State<CovidPage> {
                           style: kLabelTextStyle,
                         ),
                         SizedBox(
-                          height: 25.0,
+                          height: 30.0,
                         ),
                         Text(
                           nauseaVomiting.toString().toUpperCase(),

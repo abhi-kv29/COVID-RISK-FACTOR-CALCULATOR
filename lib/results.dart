@@ -1,4 +1,4 @@
-import 'package:covid_risk_factor_calculator/constants.dart';
+import 'package:covid_risk_factor_calculator/const_and_var.dart';
 import 'package:covid_risk_factor_calculator/home_screen.dart';
 import 'package:covid_risk_factor_calculator/input_page.dart';
 import 'package:covid_risk_factor_calculator/reusable_card.dart';
