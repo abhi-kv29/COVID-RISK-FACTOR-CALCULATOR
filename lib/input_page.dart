@@ -2,14 +2,11 @@ import 'package:covid_risk_factor_calculator/covid_page.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'icon_content.dart';
 import 'reusable_card.dart';
 import 'const_and_var.dart';
 import 'covid_page.dart';
 import 'botton_button.dart';
 import 'round_icon_button.dart';
-import 'brain.dart';
-import 'results.dart';
 
 class InputPage extends StatefulWidget {
   @override
