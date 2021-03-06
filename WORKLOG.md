@@ -65,3 +65,7 @@
 ### DAY 11
 
 - Started working on First input page issue.
+- First input page issue resolved.
+- Added finishing touches and refactored code.
+- Made seperate files for variables and constants.
+- Modified the range of calculating risk.
