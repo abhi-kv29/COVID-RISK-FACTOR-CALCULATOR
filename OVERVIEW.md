@@ -14,12 +14,11 @@ The COVID Risk Factor/Exposure Calculator is a small multiscreen test applicatio
 
 ### APPLICATION VIEW
 
-<img src ="Screenshots/home_screen.png" width=300 height=500>     <img src ="Screenshots/input_screen1.png" width=300 height=500>
+<img src = "Screenshots/home_screen.png" width=300 height=500>  <img src = "Screenshots/input_screen1.png" width=300 height=500>
 
 </br>
 
-<img src ="Screenshots/input_screen2.png" width=300 height=500>   <img src ="Screenshots/result_screen.png" width=300 height=500>
-
+<img src = "Screenshots/input_screen2.png" width=300 height=500>  <img src = "Screenshots/results_screen.png" width=300 height=500>
 
 ---
 
