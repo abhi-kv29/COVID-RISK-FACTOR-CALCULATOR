@@ -12,7 +12,9 @@ The COVID Risk Factor/Exposure Calculator is a small multiscreen test applicatio
 
 ---
 
-# APPLICATION VIEW
+### APPLICATION VIEW
+
+---
 
 ### LIMITATIONS AND FUTURE SCOPE
 
