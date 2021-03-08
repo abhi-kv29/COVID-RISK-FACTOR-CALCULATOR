@@ -136,7 +136,7 @@ class _CovidPageState extends State<CovidPage> {
                     cardChild: Column(
                       children: <Widget>[
                         Text(
-                          'TASTE & SMELL',
+                          'TASTELESSNESS',
                           style: kLabelTextStyle,
                         ),
                         SizedBox(
