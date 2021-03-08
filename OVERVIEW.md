@@ -1,2 +1,31 @@
 ## PROJECT OVERVIEW
 
+---
+
+### ABOUT 
+
+The COVID Risk Factor/Exposure Calculator is a small multiscreen test application that a user can take on themselves to check their risk of exposure percentage to COVID-19. The main aim of this application is just to tell if their is a chance of the person taking this test getting exposed to COVID-19. The factors used to actually calculate the result are taken from the official WHO website for COVID related FAQs.  
+
+---
+
+### RESULT CALCULATIONS
+
+---
+
+### APPLICATION VIEW
+
+<img src = "Screenshots/home_screen.png" width=300 height=500>  <img src = "Screenshots/input_screen1.png" width=300 height=500>
+
+</br>
+
+<img src = "Screenshots/input_screen2.png" width=300 height=500>  <img src = "Screenshots/results_page.png" width=300 height=500>
+
+---
+
+### LIMITATIONS AND FUTURE SCOPE
+
+---
+
+### PROBLEMS EXPERIENCED DURING DEVELOPMENT
+
+ 
