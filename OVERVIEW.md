@@ -16,7 +16,7 @@ This application works on factors or symptoms given by WHO to assess someone's v
 
 ### APPLICATION VIEW
 
-<img src = "Screenshots/home_screen.png" width=300 height=500>  <img src = "Screenshots/input_screen1.png" width=300 height=5Ext00>
+<img src = "Screenshots/home_screen.png" width=300 height=500>  <img src = "Screenshots/input_screen1.png" width=300 height=500>
 
 </br>
 
