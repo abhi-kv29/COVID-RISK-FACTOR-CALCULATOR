@@ -16,7 +16,7 @@ This application works on factors or symptoms given by WHO to assess someone's v
 
 ### APPLICATION VIEW
 
-<img src = "Screenshots/home_screen.png" width=300 height=500>  <img src = "Screenshots/input_screen1.png" width=300 height=500>
+<img src = "Screenshots/home_screen.png" width=300 height=500>  <img src = "Screenshots/input_screen1.png" width=300 height=5Ext00>
 
 </br>
 
@@ -36,4 +36,6 @@ This application works on factors or symptoms given by WHO to assess someone's v
 
 ### PROBLEMS EXPERIENCED DURING DEVELOPMENT
 
- 
+- Sending the inputs from first input screen to the results page directly without neglecting the second screen information.
+- Positioning of widgets as dart is not as much as flexible to position content structure as web development.
+- Extending different methods for Body Mass Index and COVID-19 symptoms for result calculation. 
