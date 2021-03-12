@@ -5,15 +5,11 @@
 
 ## STATUS: COMPLETED
 
-## DESCRIPTION
-
-This is an app created with flutter(dart) on Android Studio. It works on a basic factors based algorithm to calculate your risk factor of exposure to Covid-19 in a categorical manner. For more information regarding this project, check out OVERVIEW.md in this repository only.
-
 ## PROJECT OVERVIEW
 
 ---
 
-### ABOUT 
+### DESCRIPTION 
 
 The COVID Risk Factor/Exposure Calculator is a small multiscreen test application that a user can take on themselves to check their risk of exposure percentage to COVID-19. The main aim of this application is just to tell if their is a chance of the person taking this test getting exposed to COVID-19. The factors used to actually calculate the result are taken from the official WHO website for COVID related FAQs.  
 
